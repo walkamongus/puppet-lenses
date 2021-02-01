@@ -1,0 +1,8 @@
+<%- |
+  Hash $environment_options,
+| -%>
+# This file is managed by Puppet and local changes
+# may be overwritten
+<% $environment_options.each |$k, $v| { -%>
+<%= $k %>=<%= $v %>
+<% } -%>

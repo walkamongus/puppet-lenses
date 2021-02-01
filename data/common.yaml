@@ -1,0 +1,15 @@
+---
+lenses::version: '4.1.1'
+lenses::download_proxy: ~
+lenses::checksum: ~
+lenses::checksum_type: ~
+lenses::lenses_conf_file: '/opt/lenses/lenses.conf'
+lenses::security_conf_file: '/opt/lenses/security.conf'
+lenses::license_conf_file: '/opt/lenses/license.conf'
+lenses::lenses_conf_content: ~
+lenses::lenses_conf_source: ~
+lenses::security_conf_content: ~
+lenses::security_conf_source: ~
+lenses::license_conf_content: ~
+lenses::license_conf_source: ~
+lenses::environment_options: {}

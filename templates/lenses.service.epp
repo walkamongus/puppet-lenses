@@ -1,0 +1,21 @@
+<%- |
+  String $lenses_conf_file,
+  String $environment_file,
+| -%>
+# This file is managed by Puppet and local changes
+# may be overwritten
+[Unit]
+Description=Run Lenses.io service
+
+[Service]
+Restart=always
+User=root
+Group=root
+LimitNOFILE=4096
+WorkingDirectory=/opt/lenses
+EnvironmentFile=<%= $environment_file %>
+#Environment=LENSES_LOG4J_OPTS="-Dlogback.configurationFile=file:/etc/lenses/logback.xml"
+ExecStart=/opt/lenses/bin/lenses <%= $lenses_conf_file %>
+
+[Install]
+WantedBy=multi-user.target
